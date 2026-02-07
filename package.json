@@ -1,0 +1,51 @@
+{
+  "name": "free-ai-apis-key",
+  "version": "1.0.0",
+  "description": "The cheapest way to access GPT-5, Claude, Gemini & more. One API key, 80-90% off, $2 free credit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/Free-AI-APIs-Key.git"
+  },
+  "keywords": [
+    "ai",
+    "api",
+    "openai",
+    "claude",
+    "gemini",
+    "gpt-4",
+    "gpt-5",
+    "deepseek",
+    "kimi",
+    "cheap",
+    "affordable",
+    "low-cost",
+    "ai-api",
+    "unified-api",
+    "openai-alternative",
+    "anthropic-alternative",
+    "google-ai",
+    "llm",
+    "language-models",
+    "chatgpt",
+    "artificial-intelligence",
+    "machine-learning",
+    "nlp",
+    "text-generation",
+    "developer-tools",
+    "startup-tools",
+    "cost-optimization",
+    "budget-friendly",
+    "free-ai-api",
+    "ai-aggregator"
+  ],
+  "author": "FreeAIAPIKey.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/Free-AI-APIs-Key/issues"
+  },
+  "homepage": "https://freeaiapikey.com"
+}
