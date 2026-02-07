@@ -27,11 +27,13 @@ You get the **same premium models** at prices that **make sense for indie hacker
 
 **Yes!** You get **$2 in free credit** when you sign up. No credit card required.
 
-This is enough for:
-- ~6,000 GPT-4 requests (150 tokens each)
-- ~20,000 GPT-3.5 requests
-- Testing all our supported models
-- Building a small prototype
+**$2 lasts a LONG time because we're so cheap:**
+- ~8,000 GPT-5 input tokens
+- ~1,000 GPT-5 output tokens
+- ~3,333 Claude Sonnet messages
+- ~10,000 DeepSeek code completions
+- Testing all our supported models multiple times
+- Building a small prototype completely free
 
 ---
 
@@ -52,12 +54,14 @@ You only need a card when you want to add funds beyond the free $2.
 **Pay-as-you-go** with no subscriptions or minimums.
 
 Example pricing (per 1M tokens):
-- GPT-4: $3 (input) / $6 (output) - **90% off OpenAI**
-- Claude Opus: $2.25 / $11.25 - **85% off Anthropic**
-- Claude Sonnet: $0.45 / $2.25 - **85% off Anthropic**
-- Gemini Pro: $0.70 / $2.10 - **80% off Google**
+- GPT-5: $0.25 input / $2 output (80% off OpenAI)
+- Claude Opus 4.5: $1 input / $5 output (80% off Anthropic)
+- Claude Sonnet 4.5: $0.60 input / $3 output (80% off Anthropic)
+- Gemini 3: $0.40 input / $2.50 output (80% off Google)
+- DeepSeek V3.2: $0.20 input / $0.30 output (60-67% off)
+- Kimi K2.5: $0.25 input / $1 output (71-72% off)
 
-[Full pricing →](https://freeaiapikey.com/pricing)
+[Full pricing details →](../MODEL_PRICING.md)
 
 ---
 
@@ -86,19 +90,14 @@ Just simple per-token pricing.
 
 ### Do I need to change my code?
 
-**Almost nothing!**
-
-Just change the `base_url`:
+**Almost nothing! Just change the URL:**
 
 ```python
 # Before (OpenAI)
-client = OpenAI(api_key="sk-...")
+base_url = "https://api.openai.com/v1"
 
-# After (FreeAIAPIKey)
-client = OpenAI(
-    api_key="sk-...",
-    base_url="https://freeaiapikey.com/v1"  # ← Only this!
-)
+# After (FreeAIAPIKey - 80% cheaper!)
+base_url = "https://freeaiapikey.com/v1"
 ```
 
 Everything else stays exactly the same.
@@ -113,7 +112,6 @@ Everything else stays exactly the same.
 - Redundant systems and failover
 - Many startups run production workloads
 - Real-time status monitoring
-- Automatic provider fallback
 
 ---
 
@@ -134,7 +132,7 @@ Current models:
 - ✅ Claude Opus 4.5 (Anthropic)
 - ✅ Claude Sonnet 4.5 (Anthropic)
 - ✅ Gemini 3 (Google)
-- ✅ DeepSeek v3.2 (DeepSeek)
+- ✅ DeepSeek V3.2 (DeepSeek)
 - ✅ Kimi K2.5 (Moonshot AI)
 
 [View all models →](https://freeaiapikey.com/models)
@@ -147,7 +145,7 @@ Current models:
 
 ```python
 response = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-5",
     messages=messages,
     stream=True
 )
@@ -164,7 +162,7 @@ for chunk in response:
 
 ```python
 response = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-5",
     messages=messages,
     functions=[{
         "name": "get_weather",
@@ -200,13 +198,13 @@ Just point it to our base URL:
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(
-    model="gpt-4",
+    model="gpt-5",
     openai_api_key="your-freeai-key",
     openai_api_base="https://freeaiapikey.com/v1"
 )
 ```
 
-[See all integrations →](../docs/integrations.md)
+[See all integrations →](./integrations.md)
 
 ---
 
@@ -224,6 +222,8 @@ Compatible with:
 - ✅ OpenWebUI
 - ✅ LibreChat
 - ✅ Any OpenAI-compatible tool
+
+**Just change the base URL to `https://freeaiapikey.com/v1`**
 
 ---
 
@@ -261,12 +261,6 @@ However, if you have specific compliance requirements (HIPAA, SOC 2, etc.), cont
 
 ---
 
-### What about data residency?
-
-Currently, data is processed in US-based data centers. EU regions coming soon.
-
----
-
 ## 🚀 Getting Started
 
 ### How do I get started?
@@ -275,17 +269,17 @@ Currently, data is processed in US-based data centers. EU regions coming soon.
 
 1. Sign up at [freeaiapikey.com](https://freeaiapikey.com) (30 seconds)
 2. Copy your API key ($2 free credit included)
-3. Change your base URL to `https://freeaiapikey.com/v1`
+3. **Change your base URL to `https://freeaiapikey.com/v1`**
 
-[Quick start guide →](https://freeaiapikey.com/docs/quickstart)
+That's it!
 
 ---
 
 ### How long does setup take?
 
-**5 minutes or less.**
+**30 seconds or less.**
 
-Most developers are making API calls within 2 minutes of signing up.
+Just change the base URL in your code. No other changes needed.
 
 ---
 
@@ -293,16 +287,7 @@ Most developers are making API calls within 2 minutes of signing up.
 
 **Yes!** Use your $2 free credit to test all models risk-free. No credit card required.
 
----
-
-### What if it doesn't work for me?
-
-You lose nothing! 
-
-- No credit card required to test
-- Only $2 of free credit at risk
-- Cancel anytime
-- No contracts or commitments
+With our low prices, $2 lasts a long time - thousands of API calls!
 
 ---
 
@@ -318,7 +303,7 @@ For enterprise needs:
 - SLA guarantees
 - Compliance discussions
 
-Contact us: enterprise@freeaiapikey.com
+Contact us through our website for enterprise inquiries.
 
 ---
 
@@ -330,7 +315,7 @@ Contact us: enterprise@freeaiapikey.com
 
 ### Do you offer custom pricing?
 
-For usage over $10,000/month, contact us for custom rates: enterprise@freeaiapikey.com
+For usage over $10,000/month, contact us for custom rates through our website.
 
 ---
 
@@ -350,26 +335,25 @@ For usage over $10,000/month, contact us for custom rates: enterprise@freeaiapik
 
 | Feature | FreeAIAPIKey | OpenAI Direct |
 |---------|--------------|---------------|
-| Price | 80-90% cheaper | Full price |
-| Models | 6+ providers | OpenAI only |
+| Price | 80% cheaper | Full price |
+| Models | 6 providers | OpenAI only |
 | Rate Limits | None | Yes |
-| Free Credit | $2 | Trial only |
+| Free Tier | $2 | Trial only |
 | Credit Card | Not required | Required |
+| Setup | Just change URL | Standard |
 
-[Full comparison →](./comparisons/provider-comparison.md)
+[Full comparison →](../comparisons/provider-comparison.md)
 
 ---
 
-### How do you compare to OpenRouter?
+### How do you compare to Anthropic Direct?
 
-| Feature | FreeAIAPIKey | OpenRouter |
-|---------|--------------|------------|
-| Price | 80-90% off | ~10% off |
-| Models | 6 major models | 100+ models |
-| Rate Limits | None | Tiered |
-| Complexity | Simple | More complex |
-
-Choose FreeAIAPIKey for cost savings on major models. Choose OpenRouter for variety.
+| Feature | FreeAIAPIKey | Anthropic Direct |
+|---------|--------------|------------------|
+| Price | 80% cheaper for Claude | Full price |
+| Flexibility | Switch models instantly | Claude only |
+| Rate Limits | None | Yes |
+| Setup | Just change URL | Standard |
 
 ---
 
@@ -377,8 +361,8 @@ Choose FreeAIAPIKey for cost savings on major models. Choose OpenRouter for vari
 
 **Three reasons:**
 
-1. **Cost** - Save 80-90% (thousands per year)
-2. **Convenience** - One key for all models
+1. **Cost** - Save 80% (hundreds or thousands per year)
+2. **Convenience** - One key for all models, just change URL
 3. **No limits** - Scale without throttling
 
 Unless you need official enterprise support, FreeAIAPIKey is better.
@@ -387,7 +371,7 @@ Unless you need official enterprise support, FreeAIAPIKey is better.
 
 ## 🐛 Troubleshooting
 
-### "Invalid API key" error
+### "Invalid API key"
 
 **Solutions:**
 1. Check your key at https://freeaiapikey.com/dashboard
@@ -397,22 +381,21 @@ Unless you need official enterprise support, FreeAIAPIKey is better.
 
 ---
 
-### "Model not found" error
+### "Model not found"
 
 **Solutions:**
-1. Use exact model names: `gpt-4`, `claude-opus`, `gemini-pro`
-2. Check available models: https://freeaiapikey.com/v1/models
+1. Use exact model names: `gpt-5`, `claude-opus-4.5`, `gemini-3`
+2. Check available models at https://freeaiapikey.com/v1/models
 3. Verify your spelling (case-sensitive)
 
 ---
 
-### "Connection refused" error
+### "Connection refused"
 
 **Solutions:**
 1. Check base URL is exactly: `https://freeaiapikey.com/v1`
 2. Verify internet connection
 3. Try with curl first to isolate the issue
-4. Check if you need to configure a proxy
 
 ---
 
@@ -427,7 +410,6 @@ Unless you need official enterprise support, FreeAIAPIKey is better.
 1. Try a different model
 2. Use streaming for better UX
 3. Check your internet connection
-4. Contact us if persistent
 
 ---
 
@@ -437,45 +419,7 @@ You should get identical responses to direct API calls. If you notice difference
 
 1. Check you're using the same model version
 2. Verify temperature and other parameters match
-3. Report to support@freeaiapikey.com
-
----
-
-## 🤝 Community & Support
-
-### How do I get help?
-
-**Three ways:**
-
-1. 💬 [Discord Community](https://discord.gg/freeaiapikey) - Fastest response
-2. 📧 Email: support@freeaiapikey.com - 24-48 hour response
-3. 📖 [Documentation](https://freeaiapikey.com/docs) - Self-service
-
----
-
-### Is there phone support?
-
-Not currently. We're a small team of developers. Best support is through Discord or email.
-
----
-
-### Can I request features?
-
-**Yes!** Join our Discord and post in #feature-requests. We build what the community asks for.
-
----
-
-### How do I report bugs?
-
-1. Discord: Post in #bug-reports
-2. GitHub: Open an issue
-3. Email: support@freeaiapikey.com
-
-Include:
-- Error message
-- Code snippet
-- Model used
-- Timestamp
+3. Contact us through our website if issues persist
 
 ---
 
@@ -494,19 +438,18 @@ Built with ❤️ by developers, for developers. We're a community-focused team 
 **Not a scam!** Here's why it's legitimate:
 
 - ✅ Thousands of developers use us daily
-- ✅ $2 free credit to test risk-free
-- ✅ No credit card required to try
+- ✅ $2 free credit to test risk-free (no card needed)
 - ✅ Transparent pricing
-- ✅ Active community
 - ✅ Real cost savings (try the calculator!)
+- ✅ Just change your URL - that's it!
 
-The low prices come from volume aggregation and smart routing, not from cutting corners.
+The low prices come from volume aggregation and smart caching, not from cutting corners.
 
 ---
 
 ### How do you make money?
 
-We take a small margin from the volume discounts we negotiate. You still save 80-90%, and we make enough to keep the lights on.
+We take a small margin from the volume discounts we negotiate. You still save 80%, and we make enough to keep the lights on.
 
 It's a win-win.
 
@@ -520,15 +463,9 @@ Check real-time status: https://status.freeaiapikey.com
 
 ---
 
-### Where are you located?
-
-Operated globally with infrastructure in multiple regions. Founder is based in [Location].
-
----
-
 ### Can I invest/partner?
 
-Not currently seeking investment. For partnerships, email: partnerships@freeaiapikey.com
+Not currently seeking investment. For partnerships, contact us through our website.
 
 ---
 
@@ -539,19 +476,22 @@ Not currently seeking investment. For partnerships, email: partnerships@freeaiap
 - 🐦 Share on Twitter
 - 💬 Tell fellow developers
 - 📝 Write about your experience
-- 🤝 Help others in Discord
 
 ---
 
 ## 📝 Still Have Questions?
 
-**Ask us:**
-- 💬 [Discord](https://discord.gg/freeaiapikey)
-- 📧 support@freeaiapikey.com
-- 🐦 [@freeaiapikey](https://twitter.com/freeaiapikey)
+**Contact us:**
+- 🌐 Website: https://freeaiapikey.com
+- 💬 GitHub Issues: Open an issue on this repo
 
-**Or try it risk-free:**
-👉 [Get $2 Free →](https://freeaiapikey.com)
+---
+
+**Ready to save 80% on AI APIs?**
+
+👉 [Get $2 Free Credit →](https://freeaiapikey.com)
+
+Just change your URL and start saving instantly!
 
 ---
 

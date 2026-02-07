@@ -89,7 +89,7 @@ FREEAI_API_KEY=your-api-key-here
 
 Security updates will be announced via:
 - Email to all users
-- Discord security channel
+- Website security page
 - Status page: https://status.freeaiapikey.com
 
 ## Contact
@@ -99,8 +99,7 @@ For security concerns:
 - PGP Key: [Available upon request]
 
 For general support:
-- Discord: https://discord.gg/freeaiapikey
-- Email: support@freeaiapikey.com
+- Website: https://freeaiapikey.com
 
 ---
 

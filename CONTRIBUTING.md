@@ -31,7 +31,7 @@ Thank you for your interest in contributing! This repository helps developers di
 - Star this repository
 - Share with fellow developers
 - Write about your experience
-- Help others in Discord
+- Help others in the community
 
 ## 📝 Contribution Guidelines
 
@@ -133,14 +133,13 @@ Use clear, descriptive commit messages:
 Contributors will be:
 - Listed in our README
 - Mentioned in release notes
-- Invited to our Discord contributor channel
+- Shoutout on our website
 - Sent FreeAIAPIKey swag (for significant contributions)
 
 ## ❓ Questions?
 
 - Open an issue for questions
-- Join our [Discord](https://discord.gg/freeaiapikey)
-- Email: support@freeaiapikey.com
+- Visit our website: https://freeaiapikey.com
 
 ## 📜 Code of Conduct
 

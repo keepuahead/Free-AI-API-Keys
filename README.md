@@ -4,27 +4,52 @@
 
 ### The **Cheapest Way** to Access GPT-5, Claude, Gemini & More
 
-**One API Key • 80-90% Cheaper • $2 Free Credit • No Credit Card Required**
+**Just Change Your URL → Instant 80% Savings • $2 Free Credit • No Credit Card Required**
 
-[![Price](https://img.shields.io/badge/price-80--90%25%20off-success)](https://freeaiapikey.com)
+[![Price](https://img.shields.io/badge/price-80%25%20off-success)](https://freeaiapikey.com)
 [![Free Credit](https://img.shields.io/badge/free%20credit-$2-blue)](https://freeaiapikey.com)
 [![Models](https://img.shields.io/badge/models-6%2B%20AI%20models-orange)](https://freeaiapikey.com/models)
 [![Privacy](https://img.shields.io/badge/privacy-no%20data%20storage-9cf)](https://freeaiapikey.com/privacy)
-[![Compatible](https://img.shields.io/badge/compatible-OpenAI%20SDK-brightgreen)](https://freeaiapikey.com/docs)
 
-[🌐 **Get Started Free**](https://freeaiapikey.com) • [📚 Documentation](https://freeaiapikey.com/docs) • [💬 Discord Community](https://discord.gg/freeaiapikey) • [🐦 Twitter](https://twitter.com/freeaiapikey)
+[🌐 **Get $2 Free Credit →**](https://freeaiapikey.com)
 
 </div>
 
 ---
 
-## 🎯 What is This?
+## 🎯 Super Simple - Just Change Your URL
 
-**FreeAIAPIKey.com** provides the **most affordable access** to premium AI models including **GPT-5**, **Claude 4.5**, **Gemini 3**, **DeepSeek v3.2**, and **Kimi K2.5**.
+**No complicated setup. No code changes. Just update one line:**
 
-Stop overpaying for AI APIs. Get the **same models** at **80-90% off** official pricing with a **single API key**.
+```python
+# Before (expensive)
+base_url = "https://api.openai.com/v1"
 
-### 💰 Exact Pricing - 80% Cheaper
+# After (80% cheaper - same code, same models!)
+base_url = "https://freeaiapikey.com/v1"
+```
+
+**That's it!** Zero code changes. Zero learning curve. Instant savings.
+
+---
+
+## 💰 $2 Free Credit = Lasts A LONG Time
+
+We're so cheap that **$2 free credit lasts way longer** than you'd expect:
+
+| What You Can Do | With $2 Free Credit |
+|-----------------|---------------------|
+| **GPT-5 requests** | ~8,000 input tokens or ~1,000 output tokens |
+| **Claude Sonnet chats** | ~3,333 messages |
+| **DeepSeek coding** | ~10,000 code completions |
+| **Testing all models** | Try every model multiple times |
+| **Build a prototype** | Full MVP testing |
+
+**No credit card required.** Sign up in 30 seconds and start building immediately.
+
+---
+
+## 📊 Exact Pricing - 80% Cheaper
 
 | Model | Official Price | **Our Price** | **You Save** |
 |-------|---------------|---------------|--------------|
@@ -41,24 +66,19 @@ Stop overpaying for AI APIs. Get the **same models** at **80-90% off** official 
 
 ## ✨ Why Developers Choose Us
 
-### 🎁 **$2 Free Credit** - No Credit Card Required
-Start immediately without entering payment info. Test all models risk-free.
+### 🎁 **$2 Free Credit Lasts Forever (Almost)**
+With our ultra-low prices, $2 gets you thousands of API calls. Test everything, build your MVP, and only pay when you need more.
 
 ### 🔑 **One Key, All Models**
 Access GPT-5, Claude Opus, Claude Sonnet, Gemini 3, DeepSeek, and Kimi with a single API key.
 
-### 🔄 **Drop-in Replacement**
-Works with existing OpenAI SDK code. Just change the `base_url`:
-
+### 🔄 **Just Change the URL - That's It!**
 ```python
-# Before (expensive)
-client = OpenAI(api_key="sk-openai-key")
+# Change ONLY this line:
+base_url = "https://api.openai.com/v1"  # Expensive
+base_url = "https://freeaiapikey.com/v1"  # 80% cheaper!
 
-# After (80-90% cheaper)
-client = OpenAI(
-    api_key="sk-freeai-key",
-    base_url="https://freeaiapikey.com/v1"
-)
+# Everything else stays exactly the same
 ```
 
 ### 🚀 **No Rate Limits**
@@ -68,13 +88,13 @@ Scale without throttling. Perfect for production applications.
 We **don't store your data**. Temporary caching only (minutes, not days). Your prompts and responses are never retained.
 
 ### 🛠️ **Works With All Your Tools**
-Compatible with n8n, Claude Desktop, LangChain, LlamaIndex, Vercel AI SDK, and any OpenAI-compatible tool.
+Compatible with n8n, Claude Desktop, LangChain, LlamaIndex, Vercel AI SDK, and any OpenAI-compatible tool. Just change the base URL!
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (30 Seconds)
 
-### 1. Get Your Free API Key
+### Step 1: Get Your Free API Key
 ```
 👉 https://freeaiapikey.com
 ```
@@ -82,7 +102,7 @@ Compatible with n8n, Claude Desktop, LangChain, LlamaIndex, Vercel AI SDK, and a
 - Get $2 free credit instantly
 - No credit card required
 
-### 2. Update Your Code
+### Step 2: Change One Line of Code
 
 **Python:**
 ```python
@@ -90,11 +110,11 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your-api-key",
-    base_url="https://freeaiapikey.com/v1"
+    base_url="https://freeaiapikey.com/v1"  # ← Only this changes!
 )
 
 response = client.chat.completions.create(
-    model="gpt-4",
+    model="gpt-5",
     messages=[{"role": "user", "content": "Hello!"}]
 )
 ```
@@ -105,23 +125,23 @@ import OpenAI from 'openai';
 
 const client = new OpenAI({
   apiKey: 'your-api-key',
-  baseURL: 'https://freeaiapikey.com/v1'
+  baseURL: 'https://freeaiapikey.com/v1'  // ← Only this changes!
 });
 ```
 
 **cURL:**
 ```bash
-curl https://freeaiapikey.com/v1/chat/completions \
+curl https://freeaiapikey.com/v1/chat completions \
   -H "Authorization: Bearer your-api-key" \
   -H "Content-Type: application/json" \
   -d '{
-    "model": "gpt-4",
+    "model": "gpt-5",
     "messages": [{"role": "user", "content": "Hello!"}]
   }'
 ```
 
-### 3. Start Saving!
-That's it. Same code, same models, **80-90% cheaper**.
+### Step 3: Start Saving!
+That's it. Same code, same models, **80% cheaper**.
 
 ---
 
@@ -133,21 +153,21 @@ That's it. Same code, same models, **80-90% cheaper**.
 | **Claude Opus 4.5** | Anthropic | Complex reasoning | $1/1M | $5/1M | **80%** |
 | **Claude Sonnet 4.5** | Anthropic | Balanced performance | $0.60/1M | $3/1M | **80%** |
 | **Gemini 3** | Google | Multimodal, long context | $0.40/1M | $2.50/1M | **80%** |
-| **DeepSeek v3.2** | DeepSeek | Code generation | $0.20/1M | $0.30/1M | **60-67%** |
+| **DeepSeek V3.2** | DeepSeek | Code generation | $0.20/1M | $0.30/1M | **60-67%** |
 | **Kimi K2.5** | Moonshot AI | Long context | $0.25/1M | $1/1M | **71-72%** |
 
-[View All Models →](https://freeaiapikey.com/models)
+[View Detailed Pricing →](./MODEL_PRICING.md)
 
 ---
 
 ## 🛠️ Tool Compatibility
 
-FreeAIAPIKey works seamlessly with your favorite tools. Just change the base URL:
+FreeAIAPIKey works seamlessly with your favorite tools. **Just change the base URL:**
 
 ### n8n
 ```
 Base URL: https://freeaiapikey.com/v1
-API Key: your-freeaiapikey-key
+API Key: your-freeaiapikey
 ```
 
 ### Claude Desktop / Claude Code
@@ -155,8 +175,6 @@ API Key: your-freeaiapikey-key
 {
   "mcpServers": {
     "freeai": {
-      "command": "npx",
-      "args": ["-y", "@anthropics-ai/mcp-freeai"],
       "env": {
         "FREEAI_API_KEY": "your-api-key",
         "FREEAI_BASE_URL": "https://freeaiapikey.com/v1"
@@ -171,33 +189,16 @@ API Key: your-freeaiapikey-key
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(
-    model="gpt-4",
+    model="gpt-5",
     openai_api_key="your-api-key",
     openai_api_base="https://freeaiapikey.com/v1"
 )
 ```
 
-### Vercel AI SDK
-```javascript
-import { OpenAIStream } from 'ai';
-
-const response = await fetch('https://freeaiapikey.com/v1/chat/completions', {
-  headers: { 'Authorization': `Bearer ${process.env.FREEAI_API_KEY}` },
-  // ... rest of config
-});
+### Any OpenAI-Compatible Tool
 ```
-
-### Continue.dev
-```json
-{
-  "models": [{
-    "title": "FreeAI GPT-4",
-    "provider": "openai",
-    "model": "gpt-4",
-    "apiKey": "your-api-key",
-    "apiBase": "https://freeaiapikey.com/v1"
-  }]
-}
+Base URL: https://freeaiapikey.com/v1
+API Key: your-api-key
 ```
 
 [See All Integrations →](./docs/integrations.md)
@@ -206,23 +207,16 @@ const response = await fetch('https://freeaiapikey.com/v1/chat/completions', {
 
 ## 📊 Cost Calculator
 
-Curious how much you'll save? Use our calculator:
+See exactly how much you'll save:
 
 ```bash
-# Clone the calculator
-python tools/cost_calculator.py
-
-# Enter your monthly usage
-Monthly tokens: 1000000
-
-# See your savings
-OpenAI Direct: $90.00/month
-FreeAIAPIKey: $9.00/month
-You Save: $81.00/month (90%)
-Annual Savings: $972.00
+python tools/cost_calculator.py --all --tokens 1000000
 ```
 
-[Try the Calculator →](./tools/cost_calculator.py)
+Or use our interactive calculator:
+```bash
+python tools/cost_calculator.py
+```
 
 ---
 
@@ -232,72 +226,13 @@ Annual Savings: $972.00
 ```python
 # Change ONE line
 base_url = "https://api.openai.com/v1"  # Old
-base_url = "https://freeaiapikey.com/v1"  # New (90% cheaper!)
+base_url = "https://freeaiapikey.com/v1"  # New (80% cheaper!)
 ```
 [Full Migration Guide →](./migrations/from-openai.md)
 
-### From Anthropic
-```python
-# Use Claude models through OpenAI SDK
-response = client.chat.completions.create(
-    model="claude-opus",  # Instead of anthropic SDK
-    messages=messages
-)
-```
-[Full Migration Guide →](./migrations/from-anthropic.md)
-
-### From Other Providers
-[See All Migration Guides →](./migrations/)
-
 ---
 
-## 🔍 Compare AI API Providers
-
-| Provider | Pricing | Models | Rate Limits | Free Tier | Privacy |
-|----------|---------|--------|-------------|-----------|---------|
-| **FreeAIAPIKey** | ⭐⭐⭐ 80-90% off | ⭐⭐⭐ 6+ models | ⭐⭐⭐ None | ⭐⭐⭐ $2 free | ⭐⭐⭐ No storage |
-| OpenAI Direct | ⭐ Full price | ⭐⭐ OpenAI only | ⭐⭐ High | ⭐ Trial | ⭐⭐ Good |
-| Anthropic Direct | ⭐ Full price | ⭐⭐ Anthropic only | ⭐⭐ High | ⭐ Trial | ⭐⭐ Good |
-| OpenRouter | ⭐⭐ Market rates | ⭐⭐⭐ 100+ | ⭐⭐ Tiered | ⭐⭐ Credits | ⭐⭐ Good |
-| Together AI | ⭐⭐ Premium | ⭐⭐ Open models | ⭐⭐ Tiered | ⭐⭐ Trial | ⭐⭐ Good |
-
-[Full Comparison →](./comparisons/provider-comparison.md)
-
----
-
-## 💡 Use Cases
-
-### Startups - Reduce Burn Rate
-```
-Before: $2,000/month on AI APIs
-After: $200/month with FreeAIAPIKey
-Result: $21,600 annual savings = 3 months extra runway
-```
-
-### Indie Hackers - Build Without Breaking the Bank
-```
-Side project budget: $50/month
-With FreeAIAPIKey: Access GPT-4, Claude, Gemini
-Result: Premium AI features at indie prices
-```
-
-### Agencies - Increase Margins
-```
-Client project AI costs: $500/month
-With FreeAIAPIKey: $50/month
-Result: 90% margin improvement or competitive pricing
-```
-
-### Enterprises - Optimize Costs
-```
-Annual AI spend: $100,000
-With FreeAIAPIKey: $10,000-$20,000
-Result: $80,000+ annual savings
-```
-
----
-
-## 🌟 Featured By Developers
+## 🌟 What Developers Say
 
 > "Reduced our AI costs by 85%. Migration took 2 hours, saved us $20K/year."  
 > — **James Wilson**, CTO at Series A Startup
@@ -305,30 +240,8 @@ Result: $80,000+ annual savings
 > "Finally I can use Claude Opus for my side project without breaking the bank."  
 > — **Sarah Miller**, Indie Developer
 
-> "Dropped in as OpenAI replacement, zero issues. Just 90% cheaper."  
+> "Dropped in as OpenAI replacement, zero issues. Just 80% cheaper."  
 > — **Alex Chen**, Full-Stack Developer
-
-[Read More Testimonials →](https://freeaiapikey.com/testimonials)
-
----
-
-## 📚 Documentation
-
-- [📖 API Reference](https://freeaiapikey.com/docs)
-- [🚀 Quick Start Guide](https://freeaiapikey.com/docs/quickstart)
-- [💰 Pricing Details](https://freeaiapikey.com/pricing)
-- [🔧 Integration Guides](./docs/integrations.md)
-- [❓ FAQ](https://freeaiapikey.com/faq)
-
----
-
-## 🤝 Community
-
-Join 2,000+ developers building with affordable AI:
-
-- 💬 [Discord Community](https://discord.gg/freeaiapikey) - Get help, share projects
-- 🐦 [Twitter/X](https://twitter.com/freeaiapikey) - Updates and tips
-- 📧 [Email Support](mailto:support@freeaiapikey.com) - Team support
 
 ---
 
@@ -344,24 +257,27 @@ Join 2,000+ developers building with affordable AI:
 
 ---
 
-## ❓ FAQ
+## ❓ Frequently Asked Questions
 
 **Q: How is this so much cheaper?**  
-A: We're a team of developers building for the community, not a profit-maximizing corporation. We keep prices low through bulk purchasing, smart caching, and community support. Our mission is to make AI accessible to everyone.
+A: We're a team of developers building for the community. We keep prices low through bulk purchasing, smart caching, and staying lean without corporate bloat.
 
 **Q: Is this reliable for production?**  
-A: Yes. 99.9% uptime SLA, redundant systems, and many startups run production workloads on us.
+A: Yes. 99.9% uptime SLA, and many startups run production workloads on us.
 
 **Q: Do I need to change my code?**  
-A: Almost nothing. Just change `base_url` to `https://freeaiapikey.com/v1`. Everything else stays the same.
+A: Almost nothing! Just change `base_url` to `https://freeaiapikey.com/v1`. Everything else stays exactly the same.
+
+**Q: What about the $2 free credit?**  
+A: $2 gets you thousands of API calls because we're so cheap. It's enough to test all models and build a prototype. No credit card required.
 
 **Q: What about rate limits?**  
 A: **No rate limits.** Scale as much as you need.
 
 **Q: Is my data private?**  
-A: Absolutely. We don't store your prompts or responses. Temporary caching only (minutes, not days).
+A: Absolutely. We don't store your prompts or responses. Temporary caching only.
 
-[More FAQ →](https://freeaiapikey.com/faq)
+[More FAQ →](./docs/FAQ.md)
 
 ---
 
@@ -370,11 +286,14 @@ A: Absolutely. We don't store your prompts or responses. Temporary caching only 
 ### 1. Claim Your $2 Free Credit
 👉 **[https://freeaiapikey.com](https://freeaiapikey.com)**
 
-### 2. Grab Your API Key
-Takes 30 seconds. No credit card required.
+### 2. Change Your Base URL
+Update one line in your code:
+```python
+base_url = "https://freeaiapikey.com/v1"
+```
 
 ### 3. Start Building
-Update your base URL and save 80-90% immediately.
+Enjoy 80% cheaper AI APIs instantly!
 
 ---
 
@@ -382,7 +301,7 @@ Update your base URL and save 80-90% immediately.
 
 This repository is licensed under the [MIT License](./LICENSE).
 
-The API service itself is a commercial product with [Terms of Service](https://freeaiapikey.com/terms).
+The API service itself has [Terms of Service](https://freeaiapikey.com/terms).
 
 ---
 
@@ -390,20 +309,13 @@ The API service itself is a commercial product with [Terms of Service](https://f
 
 We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-Ways to contribute:
-- 🐛 Report bugs
-- 💡 Suggest features
-- 📖 Improve documentation
-- 🔧 Add integration examples
-- 🌐 Translate content
-
 ---
 
 <div align="center">
 
-### Built by a team of developers who believe AI should be accessible to everyone.
+### Built by a team of developers making AI accessible to everyone.
 
-**[🌐 Get $2 Free →](https://freeaiapikey.com)**
+**[🌐 Get $2 Free Credit →](https://freeaiapikey.com)**
 
 ⭐ Star this repo if it helps you save money!
 
@@ -413,7 +325,7 @@ Ways to contribute:
 
 ## 🔍 SEO Keywords
 
-This repository helps developers find affordable AI API access for: GPT-5, Claude API, Gemini API, DeepSeek API, Kimi API, OpenAI alternative, cheap AI API, free AI API key, AI API aggregator, low cost AI models, affordable Claude API, budget AI API, startup AI costs, reduce AI API costs, AI API discount, OpenAI compatible API, unified AI API, multi-model API, AI API gateway, developer AI tools, indie hacker AI, startup AI optimization.
+This repository helps developers find: Free AI API key, Cheap AI API, OpenAI alternative, Claude API discount, Affordable GPT-5, Low-cost AI models, AI API aggregator, Unified AI API, Developer AI tools, Startup AI optimization, Indie hacker AI, Reduce AI API costs, AI API discount, OpenAI compatible API, Multi-model API, AI API gateway, Budget-friendly AI.
 
 ---
 

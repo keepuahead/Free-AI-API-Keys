@@ -423,7 +423,7 @@ const response = await fetch('https://freeaiapikey.com/v1/chat/completions', {
 
 ### Different response format?
 - Should be identical to OpenAI
-- If differences found, report to support@freeaiapikey.com
+- If differences found, contact us through our website
 
 ---
 
@@ -457,10 +457,9 @@ response = client.chat.completions.create(
 
 ## 📞 Need Help?
 
-- 💬 [Discord Community](https://discord.gg/freeaiapikey)
-- 📧 support@freeaiapikey.com
-- 📖 [Full Documentation](https://freeaiapikey.com/docs)
+- 🌐 Website: https://freeaiapikey.com
+- 💬 GitHub Issues: Open an issue on this repo
 
 ---
 
-**Start saving 90% today**: [https://freeaiapikey.com](https://freeaiapikey.com) 🚀
+**Start saving 80% today**: [https://freeaiapikey.com](https://freeaiapikey.com) 🚀

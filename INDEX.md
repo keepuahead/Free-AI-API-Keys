@@ -192,9 +192,7 @@ This repository helps developers find:
 ## 🌐 External Links
 
 - 🌐 **Website**: https://freeaiapikey.com
-- 📚 **Documentation**: https://freeaiapikey.com/docs
-- 💬 **Discord**: https://discord.gg/freeaiapikey
-- 🐦 **Twitter**: https://twitter.com/freeaiapikey
+- 🌐 **Website**: https://freeaiapikey.com
 - 💰 **Pricing**: https://freeaiapikey.com/pricing
 - 🤖 **Models**: https://freeaiapikey.com/models
 

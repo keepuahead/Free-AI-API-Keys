@@ -573,9 +573,8 @@ Same API key, same base URL, just change model name!
 
 ## 📝 Need Help?
 
-- 💬 [Discord Community](https://discord.gg/freeaiapikey)
-- 📧 Email: support@freeaiapikey.com
-- 📖 [Full Documentation](https://freeaiapikey.com/docs)
+- 🌐 Website: https://freeaiapikey.com
+- 💬 GitHub Issues: Open an issue on this repo
 
 ---
 
