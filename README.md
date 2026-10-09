@@ -26,7 +26,7 @@
 base_url = "https://api.openai.com/v1"
 
 # After (80% cheaper - same code, same models!)
-base_url = "https://freeaiapikey.com/v1"
+base_url = "https://api.freeaiapikey.com/v1"
 ```
 
 **That's it!** Zero code changes. Zero learning curve. Instant savings.
@@ -76,7 +76,7 @@ Access GPT-5, Claude Opus, Claude Sonnet, Gemini 3, DeepSeek, and Kimi with a si
 ```python
 # Change ONLY this line:
 base_url = "https://api.openai.com/v1"  # Expensive
-base_url = "https://freeaiapikey.com/v1"  # 80% cheaper!
+base_url = "https://api.freeaiapikey.com/v1"  # 80% cheaper!
 
 # Everything else stays exactly the same
 ```
@@ -110,7 +110,7 @@ from openai import OpenAI
 
 client = OpenAI(
     api_key="your-api-key",
-    base_url="https://freeaiapikey.com/v1"  # ← Only this changes!
+    base_url="https://api.freeaiapikey.com/v1"  # ← Only this changes!
 )
 
 response = client.chat.completions.create(
@@ -125,13 +125,13 @@ import OpenAI from 'openai';
 
 const client = new OpenAI({
   apiKey: 'your-api-key',
-  baseURL: 'https://freeaiapikey.com/v1'  // ← Only this changes!
+  baseURL: 'https://api.freeaiapikey.com/v1'  // ← Only this changes!
 });
 ```
 
 **cURL:**
 ```bash
-curl https://freeaiapikey.com/v1/chat completions \
+curl https://api.freeaiapikey.com/v1/chat completions \
   -H "Authorization: Bearer your-api-key" \
   -H "Content-Type: application/json" \
   -d '{
@@ -166,7 +166,7 @@ FreeAIAPIKey works seamlessly with your favorite tools. **Just change the base U
 
 ### n8n
 ```
-Base URL: https://freeaiapikey.com/v1
+Base URL: https://api.freeaiapikey.com/v1
 API Key: your-freeaiapikey
 ```
 
@@ -177,7 +177,7 @@ API Key: your-freeaiapikey
     "freeai": {
       "env": {
         "FREEAI_API_KEY": "your-api-key",
-        "FREEAI_BASE_URL": "https://freeaiapikey.com/v1"
+        "FREEAI_BASE_URL": "https://api.freeaiapikey.com/v1"
       }
     }
   }
@@ -191,13 +191,13 @@ from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(
     model="gpt-5",
     openai_api_key="your-api-key",
-    openai_api_base="https://freeaiapikey.com/v1"
+    openai_api_base="https://api.freeaiapikey.com/v1"
 )
 ```
 
 ### Any OpenAI-Compatible Tool
 ```
-Base URL: https://freeaiapikey.com/v1
+Base URL: https://api.freeaiapikey.com/v1
 API Key: your-api-key
 ```
 
@@ -226,7 +226,7 @@ python tools/cost_calculator.py
 ```python
 # Change ONE line
 base_url = "https://api.openai.com/v1"  # Old
-base_url = "https://freeaiapikey.com/v1"  # New (80% cheaper!)
+base_url = "https://api.freeaiapikey.com/v1"  # New (80% cheaper!)
 ```
 [Full Migration Guide →](./migrations/from-openai.md)
 
@@ -266,7 +266,7 @@ A: We're a team of developers building for the community. We keep prices low thr
 A: Yes. 99.9% uptime SLA, and many startups run production workloads on us.
 
 **Q: Do I need to change my code?**  
-A: Almost nothing! Just change `base_url` to `https://freeaiapikey.com/v1`. Everything else stays exactly the same.
+A: Almost nothing! Just change `base_url` to `https://api.freeaiapikey.com/v1`. Everything else stays exactly the same.
 
 **Q: What about the $2 free credit?**  
 A: $2 gets you thousands of API calls because we're so cheap. It's enough to test all models and build a prototype. No credit card required.
@@ -289,7 +289,7 @@ A: Absolutely. We don't store your prompts or responses. Temporary caching only.
 ### 2. Change Your Base URL
 Update one line in your code:
 ```python
-base_url = "https://freeaiapikey.com/v1"
+base_url = "https://api.freeaiapikey.com/v1"
 ```
 
 ### 3. Start Building
